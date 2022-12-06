@@ -15,13 +15,13 @@ build:
 
 destroy:
 
-		cd ASG &&  terraform destroy -lock=false -var-file dev.tfvars -auto-approve
+		cd ASG && terraform init || terraform init -reconfigure && terraform destroy -lock=false -var-file dev.tfvars -auto-approve
 
-		cd RDS && terraform destroy -lock=false -var-file dev.tfvars -auto-approve
+		cd RDS && terraform init || terraform init -reconfigure && terraform destroy -lock=false -var-file dev.tfvars -auto-approve
 
-		cd EFS && terraform destroy -lock=false -var-file dev.tfvars -auto-approve
+		cd EFS && terraform init || terraform init -reconfigure && terraform destroy -lock=false -var-file dev.tfvars -auto-approve
 
-		cd VPC &&  terraform destroy -lock=false -var-file dev.tfvars -auto-approve
+		cd VPC && terraform init || terraform init -reconfigure &&  terraform destroy -lock=false -var-file dev.tfvars -auto-approve
 
 
 # build-ohio:
