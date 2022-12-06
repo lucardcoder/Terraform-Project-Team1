@@ -1,6 +1,6 @@
 terraform {
   backend "s3" {
-    bucket         = "tfstate-983909746875"          #your bucket name. ex : tfstate-{account_id}
+    bucket         = "tfstate-*****"          #your bucket name. ex : tfstate-{account_id}
     dynamodb_table = "tfstate-team1"           #your dynamodb table name
     key            = "tfstate-team1/dev/team1" #your dynamodb key value
     region         = "us-east-1"
