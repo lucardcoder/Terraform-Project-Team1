@@ -52,7 +52,7 @@ export TF_VAR_domain_name=domain.com ( Change to your domain name)
 Additionally, if your VM does not have administrator priviliages, run below commands to add your AWS credentials as environment variables.
 
 ``` 
-$ export AWS_ACCESS_KEY_ID={Your AWS_ACCESS_KEY_ID }
+$ export AWS_ACCESS_KEY_ID={Your AWS_ACCESS_KEY_ID}
 $ export AWS_SECRET_ACCESS_KEY={Your AWS_SECRET_ACCESS_KEY}
 ```
 
