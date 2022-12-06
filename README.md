@@ -21,17 +21,17 @@ Resources created;
 
 #
 ### Contents
-* [Architecture](https://github.com/lucardcoder/terraform-wordpress-project-latest#architecture-design)
-* [Prerequisites](https://github.com/lucardcoder/terraform-wordpress-project-latest#prerequisites)
-* [Remote Backend](https://github.com/lucardcoder/terraform-wordpress-project-latest#remote-backend)
+* [Architecture](https://github.com/lucardcoder/Terraform-Project-Team1#architecture-design)
+* [Prerequisites](https://github.com/lucardcoder/Terraform-Project-Team1#prerequisites)
+* [Remote Backend](https://github.com/lucardcoder/Terraform-Project-Team1#remote-backend)
 * [VPC](https://github.com/lucardcoder/Terraform-Project-Team1/tree/master/VPC#vpc)
 * [Auto Scaling Group/Load Balancer](https://github.com/lucardcoder/Terraform-Project-Team1/tree/master/ASG#auto-scaling-group--application-load-balancer)
 * [User Data](https://github.com/lucardcoder/Terraform-Project-Team1/tree/master/ASG#user-data-to-install-wordpress--nfs--redis-cache)
 * [AWS Aurora RDS CLuster](https://github.com/lucardcoder/Terraform-Project-Team1/tree/master/RDS#aws-aurora-rds-cluster)
 * [EFS](https://github.com/lucardcoder/Terraform-Project-Team1/tree/master/EFS#efs)
-* [Route53](https://github.com/lucardcoder/terraform-wordpress-project-latest/tree/master/ASG#route53)
-* [Initializing Terraform](https://github.com/lucardcoder/terraform-wordpress-project-latest#Initializing-Terraform)
-* [Deleting Resources](https://github.com/lucardcoder/terraform-wordpress-project-latest#deleting-resources)
+* [Route53](https://github.com/lucardcoder/Terraform-Project-Team1/tree/master/ASG#route53)
+* [Initializing Terraform](https://github.com/lucardcoder/Terraform-Project-Team1#initializing-terraform)
+* [Deleting Resources](https://github.com/lucardcoder/Terraform-Project-Team1#deleting-resources)
 
 
 ## Architecture-Design
