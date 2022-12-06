@@ -3,6 +3,16 @@ variable "cidr_block" {
   type        = string
   default     = ""
 }
+
+# variable "access_key" {
+#   type = "string"
+# }
+
+# variable "secret_key" {
+#   type = "string"
+# }
+
+
 variable "region" {
   description = "Please provide a region name"
   type        = string
@@ -42,4 +52,10 @@ variable "private_subnet3" {
   description = "Please provide subnet CIDR block"
   type        = string
   default     = ""
+}
+
+variable "enable_nat_gateway" {
+  description = "true if you want to provision NAT Gateways for each of private subnets"
+  type        = bool
+  default     = false
 }
