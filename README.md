@@ -41,7 +41,7 @@ Resources created;
 ## Prerequisites
 1. AWS account with configured AWS credentials.(if running on an EC2, make sure to give admin privilages to the instance).
 
-* Add below environment variables on the command line or add them in ~/.bashrc . Change the region and domain name to your own.
+* Add below Terraform environment variables on the command line or add them in ~/.bashrc . Change the region and domain name to your own.
 
 ``` 
 export TF_VAR_region=us-east-1 ( Change to any region )
