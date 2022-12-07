@@ -1,5 +1,5 @@
 ## Auto Scaling Group & Application Load Balancer
-Load Balancer works with launch template Auto Scaling Group to distribute incoming traffic across your targets to Servers (healthy Amazon EC2 instances) and Database. This increases the scalability and availability of your application. You can enable Load Balancer within multiple availability zones to increase the fault tolerance of your applications.
+Load Balancer works with launch template Auto Scaling Group to distribute incoming traffic across targets to Servers (healthy Amazon EC2 instances) and Database. This increases the scalability and availability of the application. We can enable Load Balancer within multiple availability zones to increase the fault tolerance of your applications.
 ```
 module "asg" {
   source  = "terraform-aws-modules/autoscaling/aws"
