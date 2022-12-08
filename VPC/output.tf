@@ -33,5 +33,5 @@ output "az3" {
 
 
 # output all {
-#     value = data.terraform_remote_state.remote.outputs.*
+#     value = terraform_remote_state.remote.outputs.*
 # }

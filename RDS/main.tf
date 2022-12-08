@@ -11,7 +11,7 @@ data "terraform_remote_state" "backend" {
   backend = "s3"
   config = {
     bucket = "tfstate-${local.account_id}"
-    key    = "tfstate-team1/dev/team1"
+    key    = "tfstate-team1/dev/VPC"
     region = "us-east-1"
   }
 }

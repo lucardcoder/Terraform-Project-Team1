@@ -1,6 +1,5 @@
 
 
-
 build:
 		cd VPC && terraform init || terraform init -reconfigure && terraform apply -var-file dev.tfvars -auto-approve
 

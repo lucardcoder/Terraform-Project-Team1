@@ -12,7 +12,7 @@ yum update -y
 yum install -y httpd
 yum install -y mysql
 
-sudo yum install nfs-utils -y -q
+yum install nfs-utils -y -q
 
 # Mounting Efs 
 sudo mount -t nfs -o nfsvers=4.1,rsize=1048576,wsize=1048576,hard,timeo=600,retrans=2,noresvport ${efs_dns_name}:/  /var/www/html
@@ -20,7 +20,7 @@ sudo mount -t nfs -o nfsvers=4.1,rsize=1048576,wsize=1048576,hard,timeo=600,retr
 echo '${efs_dns_name}:/ /var/www/html nfs4 defaults,vers=4.1,rsize=1048576,wsize=1048576,hard,timeo=600,retrans=2,noresvport 0 0' >> /etc/fstab
 
 
-#first enable php7.xx from  amazon-linux-extra and install it
+# first enable php7.xx from  amazon-linux-extra and install it
 amazon-linux-extras enable php7.4
 yum clean metadata
 yum install -y php php-{pear,cgi,common,curl,mbstring,gd,mysqlnd,gettext,bcmath,json,xml,fpm,intl,zip,imap,devel}
@@ -36,7 +36,6 @@ extension=imagick
 EOF
 
 systemctl restart php-fpm.service
-
 systemctl start  httpd
 
 
@@ -51,7 +50,6 @@ find /var/www -type f -exec chmod 0664 {} \;
 wget https://wordpress.org/latest.tar.gz
 tar -xzf latest.tar.gz
 cp -r wordpress/* /var/www/html/
-# Create wordpress configuration file and update database value
 cd /var/www/html
 cp wp-config-sample.php wp-config.php
 sed -i "s/database_name_here/$db_name/g" wp-config.php

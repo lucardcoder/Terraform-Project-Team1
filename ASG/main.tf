@@ -11,10 +11,12 @@ data "terraform_remote_state" "backend" {
   backend = "s3"
   config = {
     bucket = "tfstate-${local.account_id}"
-    key    = "tfstate-team1/dev/team1"
+    key    = "tfstate-team1/dev/VPC"
     region = "us-east-1"
   }
 }
+
+
 
 
 
@@ -33,6 +35,8 @@ data "aws_ami" "amazon-linux-2" {
     values = ["amzn2-ami-hvm*"]
   }
 }
+
+
 
 
 
@@ -117,9 +121,9 @@ module "asg" {
   wait_for_capacity_timeout = 0
   health_check_type         = "EC2"
   vpc_zone_identifier = [
-    data.terraform_remote_state.backend.outputs.public_subnet1,
-    data.terraform_remote_state.backend.outputs.public_subnet2,
-    data.terraform_remote_state.backend.outputs.public_subnet3
+    data.terraform_remote_state.backend.outputs.private_subnet1,
+    data.terraform_remote_state.backend.outputs.private_subnet2,
+    data.terraform_remote_state.backend.outputs.private_subnet3
   ]
   depends_on = [module.alb]
 
