@@ -1,4 +1,4 @@
-# AWS Project Team 1 
+# AWS Terraform Project Team 1 
 In this project, we aim to build a three-tier wordpress application using Terraform.
 
 Resources created;
