@@ -45,7 +45,6 @@ Resources created;
 
 ``` 
 export TF_VAR_region=us-east-1 ( Change to any region )
-export PKR_VAR_region=$TF_VAR_region
 export TF_VAR_domain_name=domain.com ( Change to your domain name)
 ```
 
