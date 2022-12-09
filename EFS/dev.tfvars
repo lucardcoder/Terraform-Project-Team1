@@ -1,4 +1,4 @@
-#region = "us-east-1"    # please declare as environment variables. ex: ( export TF_VAR_region=us-east-1)  then (export PKR_VAR_region=$TF_VAR_region)
+#region = "us-east-1"    # please declare as environment variables. ex: ( export TF_VAR_region=us-east-1)
 
 tags = {
   Name = "Terraform-project"
