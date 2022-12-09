@@ -35,7 +35,7 @@ Resources created;
 
 
 ## Architecture-Design
-![alt text](https://user-images.githubusercontent.com/104270411/205815243-746ff7ed-6c16-4b4c-adba-854d7eb366fb.jpg "Architecture")
+![alt text](https://user-images.githubusercontent.com/104270411/206619637-8a7f50bd-a1c6-4e0b-81c2-47f8c0f71d7b.jpg "Architecture")
 
 #
 ## Prerequisites
