@@ -7,7 +7,7 @@ Resources created;
 * 3 x Private Subnets
 * 3 x Public Subnets
 * 1 x Internet Gateway
-* 3 x NAT Gateways ( If enabled )
+* 1 x NAT Gateway ( If enabled )
 * 1 x Public Route table
 * 1 x Private Route table
 * 1 x RDS Aurora cluster with 1 writer, 3 reader instances
