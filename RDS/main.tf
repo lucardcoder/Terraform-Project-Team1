@@ -123,13 +123,6 @@ resource "aws_route53_record" "writer" {
 }
 
 
-# resource "aws_route53_record" "reader" {
-#   zone_id = data.aws_route53_zone.my_zone.zone_id 
-#   name    = "reader.${var.domain_name}"
-#   type    = "CNAME"
-#   ttl     = "300"
-#   records = [aws_rds_cluster_instance.wordpress_cluster_instance_readers.endpoint]
-# }
 
 
 # Use below if more than 1 readers #
