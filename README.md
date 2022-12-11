@@ -10,10 +10,10 @@ Resources created;
 * 1 x NAT Gateway ( If enabled )
 * 1 x Public Route table
 * 1 x Private Route table
-* 1 x RDS Aurora cluster with 1 writer, 3 reader instances
-* 1 x EFS 
+* 1 x RDS Aurora cluster with 1 writer, 3 reader instances (Customizable)
+* 1 x EFS with 3 mount points
 * 1 x Application Load Balancer
-* 1 x Auto Scaling Group (3 minimum 99 maximum instances)
+* 1 x Auto Scaling Group (3 minimum 99 maximum instances)(Customizable)
 * 1 x security group for Web layer
 * 1 x security group for Database layer
 * 1 x security group for EFS
